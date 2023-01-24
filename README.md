@@ -17,24 +17,25 @@ Kseniia
 
 # TASK 2: selectors
 
-## login_input_xpath
+### login_input_xpath
 
-//*[@id="login"]
-//input[@type="text"]
-//input[@name="login"]
-//*[@id="__next"]/form/div/div[1]/div[1]/div/input
-
-
-button(sing_in)_xpath
-
-//button[@tabindex="0"]
-//button[@type="submit"]
-//*[@class="MuiButtonBase-root MuiButton-root MuiButton-contained jss5 MuiButton-containedPrimary"]
-//*[*/@class="MuiButton-label"]
+1. //*[@id="login"]
+2. //input[@type="text"]
+3. //input[@name="login"]
+4. //*[@id="__next"]/form/div/div[1]/div[1]/div/input
 
 
-dropdown_menu_xpath
-//*[*/text()="English"]
-//*[*/@class="MuiSvgIcon-root MuiSelect-icon"]
-//form/div/div[2]/div
+### button(sing_in)_xpath
+
+1. //button[@tabindex="0"]
+2. //button[@type="submit"]
+3. //*[@class="MuiButtonBase-root MuiButton-root MuiButton-contained jss5 MuiButton-containedPrimary"]
+4. //*[*/@class="MuiButton-label"]
+
+
+### dropdown_menu_xpath
+
+1. //*[*/text()="English"]
+2. //*[*/@class="MuiSvgIcon-root MuiSelect-icon"]
+3. //form/div/div[2]/div
 

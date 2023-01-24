@@ -17,7 +17,7 @@ Kseniia
 
 # TASK 2: selectors
 
-login_input_xpath
+## login_input_xpath
 
 //*[@id="login"]
 //input[@type="text"]

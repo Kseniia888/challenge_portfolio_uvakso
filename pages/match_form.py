@@ -9,7 +9,7 @@ class Match_form (BasePage):
    button_submit_xpath = '//button[@type="submit"]'
    button_clear_xpath = '//div[3]/button[2]'
    date_input_xpath = '//input[@type="date"]'
-   Adding_match_player_abc_Makowski****_xpath= '//form/div[1]/div/span'
+   Adding_match_player_abc_Makowski_xpath= '//form/div[1]/div/span'
    lable_Raiting_xpath = '//div[13]/div/label'
 
 

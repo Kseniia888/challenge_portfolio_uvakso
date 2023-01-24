@@ -14,3 +14,27 @@ I expect from this project the acquired knowledge and opportunities for further 
 
 Best regards,
 Kseniia 
+
+# TASK 2: selectors
+
+login_input_xpath
+
+//*[@id="login"]
+//input[@type="text"]
+//input[@name="login"]
+//*[@id="__next"]/form/div/div[1]/div[1]/div/input
+
+
+button(sing_in)_xpath
+
+//button[@tabindex="0"]
+//button[@type="submit"]
+//*[@class="MuiButtonBase-root MuiButton-root MuiButton-contained jss5 MuiButton-containedPrimary"]
+//*[*/@class="MuiButton-label"]
+
+
+dropdown_menu_xpath
+//*[*/text()="English"]
+//*[*/@class="MuiSvgIcon-root MuiSelect-icon"]
+//form/div/div[2]/div
+

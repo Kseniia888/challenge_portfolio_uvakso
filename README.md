@@ -18,12 +18,12 @@ Kseniia
 # TASK 2: selectors
 
 ### login_input_xpath
-```
+
 1. //*[@id="login"]
 2. //input[@type="text"]
 3. //input[@name="login"]
 4. //*[@id="__next"]/form/div/div[1]/div[1]/div/input
-```
+
 ### button(sing_in)_xpath
 
 1. //button[@tabindex="0"]

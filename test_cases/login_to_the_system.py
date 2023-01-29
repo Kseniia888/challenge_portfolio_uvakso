@@ -7,6 +7,7 @@ from pages.login_page import LoginPage
 
 class TestLoginPage(unittest.TestCase):
 
+
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
@@ -28,10 +29,12 @@ class TestLoginPage(unittest.TestCase):
 
     def Test_Click_Button(self):
         user_click = LoginPage(self.driver)
-        user_click.click_on_the_button().click()
+        user_click.click_on_the_button()
 
 
 
     @classmethod
     def tearDown(self):
         self.driver.quit()
+
+    #unittest.main()56

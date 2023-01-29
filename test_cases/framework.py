@@ -47,3 +47,4 @@ class TestMediumPage(unittest.TestCase):
     @classmethod
     def tearDown(self):
         self.driver.quit()
+

@@ -8,3 +8,7 @@ class LoginPage(BasePage):
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
+
+    def type_in_email(self, password):
+        self.field_send_keys(self.password_field_xpath, password)
+

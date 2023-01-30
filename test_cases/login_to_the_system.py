@@ -11,6 +11,8 @@ from pages.login_page import LoginPage
 class TestLoginPage(unittest.TestCase):
 
 
+
+
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
@@ -27,7 +29,6 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_on_the_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
-
         time.sleep(5)
 
 

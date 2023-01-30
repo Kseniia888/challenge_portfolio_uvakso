@@ -19,7 +19,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_login_into_the_system (self):
+    def test_login_into_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.type_in_email('user07@getnada.com')

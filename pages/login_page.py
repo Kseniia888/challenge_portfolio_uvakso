@@ -8,6 +8,9 @@ class LoginPage(BasePage):
     sign_in_button_xpath = "//button[@tabindex='0']"
     login_url = "https://scouts-test.futbolkolektyw.pl/login"
     expected_title = 'Scouts panel - sign in'
+    #expected_q_text = 'Scouts Panel'
+    s_element_xpath = '//div/div[1]/h5'
+
 
 
     def type_in_email(self, email):
@@ -21,6 +24,10 @@ class LoginPage(BasePage):
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
+
+
+    """def check_Scouts_Panel_text(self, expected_text):
+        self.assert_element_text(self.s_element_xpath, expected_text)"""
 
 
 

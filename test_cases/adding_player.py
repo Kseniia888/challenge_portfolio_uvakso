@@ -33,6 +33,7 @@ class TestLoginPage(unittest.TestCase):
         dashboard_page.title_of_page()
         add_a_player_page = AddAPlayer(self.driver)
         add_a_player_page.click_on_the_span()
+        add_a_player_page.title_of_page()
 
 
 

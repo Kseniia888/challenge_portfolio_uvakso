@@ -35,6 +35,7 @@ class TestLoginPage(unittest.TestCase):
         add_a_player_page.click_on_the_span()
 
 
+
         time.sleep(5)
 
 

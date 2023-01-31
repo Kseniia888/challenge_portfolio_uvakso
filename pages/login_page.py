@@ -9,7 +9,7 @@ class LoginPage(BasePage):
     login_url = "https://scouts-test.futbolkolektyw.pl/login"
     expected_title = 'Scouts panel - sign in'
     #expected_q_text = 'Scouts Panel'
-    s_element_xpath = '//div/div[1]/h5'
+    #s_element_xpath = '//div/div[1]/h5'
 
 
 

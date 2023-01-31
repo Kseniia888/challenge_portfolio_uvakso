@@ -29,6 +29,7 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_on_the_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
+
         time.sleep(5)
 
 

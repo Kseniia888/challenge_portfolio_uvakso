@@ -25,13 +25,13 @@ class TestLoginPage(unittest.TestCase):
     def test_login_into_the_system(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
-        base_page = BasePage(self.driver)
-        base_page.assert_element_text(self.driver, '//div/div[1]/h5', 'Scouts Panel')
         user_login.type_in_email('user07@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.title_of_page()
+        base_page = BasePage(self.driver)
+        base_page.assert_element_text(self.driver, '//div/div[1]/h5', 'Scouts Panel')
 
 
 

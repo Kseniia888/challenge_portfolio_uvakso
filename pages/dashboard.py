@@ -1,4 +1,7 @@
 import time
+from lib2to3.pgen2 import driver
+
+from selenium.webdriver.support.wait import WebDriverWait
 
 from pages.base_page import BasePage
 
@@ -6,6 +9,7 @@ from pages.base_page import BasePage
 class Dashboard(BasePage):
     expected_title = "Scouts panel"
     dashboard_url = "https://scouts-test.futbolkolektyw.pl/"
+    wait = WebDriverWait(driver, 10)
 
 
     Scouts_Panel_xpath = "//header/div/h6"

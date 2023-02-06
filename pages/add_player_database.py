@@ -34,8 +34,18 @@ class AddPlayerToDataBase(BasePage):
     add_link_button_xpath = "//div[19]/button/span[1]"
     required_paragraph_xpath = "//div/p/text()"
     required_inputs_xpath = "//div/p/../div/input"
+    input_type_text_xpath = "//input[@type = 'text']"
 
-    def fill_inn_required_inputs(self):
+    def click_on_required_inputs(self):
+        self.click_on_the_element(self.name_xpath)
+
+
+
+   """ def check_type_of_input(self):
+        assert self.get_element_type(self.input_type_text_xpath) == self.required_inputs_xpath"""
+
+
+
 
 
 

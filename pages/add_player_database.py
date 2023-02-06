@@ -32,6 +32,10 @@ class AddPlayerToDataBase(BasePage):
     clear_button_xpath = "//button[2]/span[1]"
     add_language_button_xpath = "//div[15]/button/span[1]"
     add_link_button_xpath = "//div[19]/button/span[1]"
+    required_paragraph_xpath = "//div/p/text()"
+    required_inputs_xpath = "//div/p/../div/input"
+
+
 
 
 

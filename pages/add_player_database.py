@@ -35,6 +35,8 @@ class AddPlayerToDataBase(BasePage):
     required_paragraph_xpath = "//div/p/text()"
     required_inputs_xpath = "//div/p/../div/input"
 
+    def fill_inn_required_inputs(self):
+
 
 
 

@@ -28,6 +28,10 @@ class AddPlayerToDataBase(BasePage):
     webLaczy_xpath = "//input[@name = 'webLaczy']"
     web90_xpath = "//input[@name = 'web90']"
     webFB_xpath = "//input[@name = 'webFB']"
+    submit_button_xpath = "//button[@type = 'submit']"
+    clear_button_xpath = "//button[2]/span[1]"
+    add_language_button_xpath = "//div[15]/button/span[1]"
+    add_link_button_xpath = "//div[19]/button/span[1]"
 
 
 

@@ -21,6 +21,7 @@ class TestLoginPage(unittest.TestCase):
         self.driver.get('https://scouts-test.futbolkolektyw.pl/login')
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
+        super(TestLoginPage, self).setUp(self)
 
     def test_login_into_the_system(self):
         user_login = LoginPage(self.driver)

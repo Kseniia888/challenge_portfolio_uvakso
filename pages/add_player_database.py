@@ -17,7 +17,7 @@ class AddPlayerToDataBase(BasePage):
     name_xpath = "//input[@name = 'name']"
     surname_xpath = "//input[@name = 'surname']"
     phone_xpath = "//input[@name = 'phone']"
-    weight_xpath = "//input[@name = weight]"
+    weight_xpath = "//input[@name = 'weight']"
     height_xpath = "//input[@name = 'height']"
     age_xpath = "//input[@name = 'age']"
     leg_xpath = "//*[@id = 'mui-component-select-leg']"

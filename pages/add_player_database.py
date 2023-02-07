@@ -43,6 +43,9 @@ class AddPlayerToDataBase(BasePage):
         self.field_send_keys(self.surname_xpath, 'Surname Test')
         self.field_send_keys(self.mainPosition_xpath, 'Main position test')
         self.click_on_the_element(self.age_xpath)
+        self.field_send_keys(self.age_xpath, '15.12.1992')
+        """self.field_send_keys(self.age_xpath, '12')
+        self.field_send_keys(self.age_xpath, '1992')"""
 
 
 

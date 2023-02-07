@@ -14,6 +14,7 @@ class LoginPage(BasePage):
     expected_reminder_title = 'Remind password'
     warning_sign_xpath = "//div[3]/span"
     expected_warning = 'Identifier or password invalid.'
+    language_changer_xpath = "//ul[2]/div[1]/div[2]/span"
 
     #   "//a/text()"
 
@@ -25,6 +26,9 @@ class LoginPage(BasePage):
 
     def click_on_the_button(self):
         self.click_on_the_element(self.sign_in_button_xpath)
+
+    def click_on_the_language(self):
+        self.click_on_the_element(self.language_changer_xpath)
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title

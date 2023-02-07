@@ -21,11 +21,14 @@ class AddPlayerToDataBase(BasePage):
     height_xpath = "//input[@name = 'height']"
     age_xpath = "//input[@name = 'age']"
     leg_xpath = "//*[@id = 'mui-component-select-leg']"
+    left_leg_xpath = "//li[@data-value='left'"
+    right_leg_xpath = "//li[@data-value='right']"
     club_xpath = "//input[@name='club'"
     level_xpath = "//input[@name = 'level']"
     mainPosition_xpath = "//input[@name = 'mainPosition']"
     secondPosition_xpath = "//input[@name = 'secondPosition']"
     district_xpath = "//*[@id = 'mui-component-select-district']"
+    district1_xpath = "//ul/li[1]"
     achievements_xpath = "//input[@name = 'achievements']"
     webLaczy_xpath = "//input[@name = 'webLaczy']"
     web90_xpath = "//input[@name = 'web90']"
@@ -39,13 +42,28 @@ class AddPlayerToDataBase(BasePage):
     input_type_text_xpath = "//input[@type = 'text']"
 
     def fill_in_name(self):
+
+        self.field_send_keys(self.email_xpath, 'email@email')
         self.field_send_keys(self.name_xpath, 'Name Test')
         self.field_send_keys(self.surname_xpath, 'Surname Test')
-        self.field_send_keys(self.mainPosition_xpath, 'Main position test')
-        self.click_on_the_element(self.age_xpath)
+        self.field_send_keys(self.phone_xpath, '999 999 999')
+        self.field_send_keys(self.weight_xpath, '85')
+        self.field_send_keys(self.height_xpath, '185')
         self.field_send_keys(self.age_xpath, '15.12.1992')
-        """self.field_send_keys(self.age_xpath, '12')
-        self.field_send_keys(self.age_xpath, '1992')"""
+        self.click_on_the_element(self.leg_xpath)
+        self.click_on_the_element(self.right_leg_xpath)
+        self.field_send_keys(self.club_xpath, 'Test')
+        self.field_send_keys(self.level_xpath, 'Test')
+        self.field_send_keys(self.mainPosition_xpath, 'Main position test')
+        self.field_send_keys(self.secondPosition_xpath, 'Test')
+        self.click_on_the_element(self.district_xpath)
+        self.click_on_the_element(self.district1_xpath)
+        self.field_send_keys(self.achievements_xpath)
+
+
+        self.click_on_the_element(self.submit_button_xpath)
+
+
 
 
 

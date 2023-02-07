@@ -40,6 +40,7 @@ class AddPlayerToDataBase(BasePage):
     required_paragraph_xpath = "//div/p/text()"
     required_inputs_xpath = "//div/p/../div/input"
     input_type_text_xpath = "//input[@type = 'text']"
+    popup_xpath = "//*[@role= 'alert']"
 
     def fill_in_name(self):
 
@@ -62,6 +63,11 @@ class AddPlayerToDataBase(BasePage):
 
 
         self.click_on_the_element(self.submit_button_xpath)
+
+
+
+
+
 
 
 

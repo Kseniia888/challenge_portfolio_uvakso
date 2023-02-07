@@ -7,6 +7,7 @@ from pages.add_player_database import AddPlayerToDataBase
 from pages.add_a_player import AddAPlayer
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
+from pages.base_page import BasePage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from test_cases.adding_player import TestAddingPage
 
@@ -25,6 +26,8 @@ class AddPlayerToBase(unittest.TestCase):
         user_adding = AddPlayerToDataBase(self.driver)
         user_adding.fill_in_name()
         time.sleep(3)
+    #    base_page = BasePage(self.driver)
+    #    base_page.assert_element_text(self.driver, '//*[@id="__next"]/div[2]/div', 'Added player.')
 
 
 

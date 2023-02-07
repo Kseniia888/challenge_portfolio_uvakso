@@ -43,7 +43,7 @@ class AddPlayerToDataBase(BasePage):
 
     def fill_in_name(self):
 
-        self.field_send_keys(self.email_xpath, 'email@email')
+        self.field_send_keys(self.email_xpath, 'email@gemail.com')
         self.field_send_keys(self.name_xpath, 'Name Test')
         self.field_send_keys(self.surname_xpath, 'Surname Test')
         self.field_send_keys(self.phone_xpath, '999 999 999')

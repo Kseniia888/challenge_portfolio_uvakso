@@ -23,8 +23,7 @@ class ChangeLanguage(unittest.TestCase):
         chang_language = LoginPage(self.driver)
         time.sleep(3)
         chang_language.click_on_the_language()
-
-    time.sleep(5)
+        time.sleep(5)
 
     @classmethod
     def tearDown(self):

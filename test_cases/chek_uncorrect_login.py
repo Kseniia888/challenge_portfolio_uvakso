@@ -29,10 +29,6 @@ class TestUncorrectLogin(unittest.TestCase):
         base_page = BasePage(self.driver)
         base_page.assert_element_text(self.driver, '//div[3]/span', 'Identifier or password invalid.')
 
-
-
-
-
         time.sleep(5)
 
 

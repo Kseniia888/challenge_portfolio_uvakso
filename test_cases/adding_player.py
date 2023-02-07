@@ -13,8 +13,6 @@ from test_cases.login_to_the_system import TestLoginPage
 class TestAddingPage(unittest.TestCase):
 
 
-
-
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)

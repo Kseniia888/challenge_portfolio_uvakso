@@ -3,11 +3,13 @@ import time
 import unittest
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 from pages.add_a_player import AddAPlayer
 from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+from selenium.webdriver.support.select import Select
 
 
 class AddPlayerToDataBase(BasePage):
@@ -36,21 +38,22 @@ class AddPlayerToDataBase(BasePage):
     required_inputs_xpath = "//div/p/../div/input"
     input_type_text_xpath = "//input[@type = 'text']"
 
-    def click_on_required_inputs(self):
-        self.click_on_the_element(self.name_xpath)
-
-
-
-   """ def check_type_of_input(self):
-        assert self.get_element_type(self.input_type_text_xpath) == self.required_inputs_xpath"""
-
-
+    def fill_in_name(self):
+        self.field_send_keys(self.name_xpath, 'Name Test')
+        self.field_send_keys(self.surname_xpath, 'Surname Test')
+        self.field_send_keys(self.mainPosition_xpath, 'Main position test')
+        self.click_on_the_element(self.age_xpath)
 
 
 
 
+    """def fill_in_inputs_type_text(self, input):
+        self.field_send_keys(self.input_type_text_xpath, input)"""
 
 
 
 
 
+
+"""def check_type_of_input(self):
+      assert self.get_element_type(self.input_type_text_xpath) == self.required_inputs_xpath"""

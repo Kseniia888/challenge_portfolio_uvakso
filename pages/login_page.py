@@ -1,4 +1,3 @@
-
 from pages.base_page import BasePage
 
 
@@ -8,15 +7,15 @@ class LoginPage(BasePage):
     sign_in_button_xpath = "//button[@tabindex='0']"
     login_url = "https://scouts-test.futbolkolektyw.pl/login"
     expected_title = 'Scouts panel - sign in'
-    #expected_q_text = 'Scouts Panel'
-    #s_element_xpath = '//div/div[1]/h5'
+    # expected_q_text = 'Scouts Panel'
+    # s_element_xpath = '//div/div[1]/h5'
     remind_element_xpath = "//div[1]/a"
     reminder_url = "https://scouts-test.futbolkolektyw.pl/en/remind"
     expected_reminder_title = 'Remind password'
+    warning_sign_xpath = "//div[3]/span"
+    expected_warning = 'Identifier or password invalid.'
 
- #   "//a/text()"
-
-
+    #   "//a/text()"
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -30,7 +29,6 @@ class LoginPage(BasePage):
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
 
-
     """def check_Scouts_Panel_text(self, expected_text):
         self.assert_element_text(self.s_element_xpath, expected_text)"""
 
@@ -42,20 +40,5 @@ class LoginPage(BasePage):
 
     def title_of_reminder(self):
         assert self.get_page_title(self.reminder_url) == self.expected_reminder_title
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

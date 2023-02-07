@@ -3,15 +3,11 @@ import time
 import unittest
 
 from selenium import webdriver
-
-from pages.add_a_player import AddAPlayer
-from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 class TestRemindButton(unittest.TestCase):
 
-    driver = None
 
     @classmethod
     def setUp(self):

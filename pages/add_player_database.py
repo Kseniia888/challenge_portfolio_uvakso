@@ -23,7 +23,7 @@ class AddPlayerToDataBase(BasePage):
     leg_xpath = "//*[@id = 'mui-component-select-leg']"
     left_leg_xpath = "//li[@data-value='left'"
     right_leg_xpath = "//li[@data-value='right']"
-    club_xpath = "//input[@name='club'"
+    club_xpath = "//input[@name='club']"
     level_xpath = "//input[@name = 'level']"
     mainPosition_xpath = "//input[@name = 'mainPosition']"
     secondPosition_xpath = "//input[@name = 'secondPosition']"
@@ -58,7 +58,7 @@ class AddPlayerToDataBase(BasePage):
         self.field_send_keys(self.secondPosition_xpath, 'Test')
         self.click_on_the_element(self.district_xpath)
         self.click_on_the_element(self.district1_xpath)
-        self.field_send_keys(self.achievements_xpath)
+        self.field_send_keys(self.achievements_xpath, 'Test')
 
 
         self.click_on_the_element(self.submit_button_xpath)

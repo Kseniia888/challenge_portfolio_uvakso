@@ -4,10 +4,6 @@ import unittest
 
 from selenium import webdriver
 from pages.add_player_database import AddPlayerToDataBase
-from pages.add_a_player import AddAPlayer
-from pages.dashboard import Dashboard
-from pages.login_page import LoginPage
-from pages.base_page import BasePage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from test_cases.adding_player import TestAddingPage
 

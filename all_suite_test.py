@@ -1,6 +1,7 @@
 import unittest
 
 from unittest.loader import makeSuite
+from unittest.loader import loadTestsFromTestCase
 
 from test_cases.adding_player_to_database import AddPlayerToBase
 from test_cases.change_language import ChangeLanguage
@@ -18,6 +19,11 @@ def full_suite():
    test_suite.addTest(makeSuite(TestUncorrectLogin))
    test_suite.addTest(makeSuite(SingOut))
    return test_suite
+
+# def full_suite():
+#    test_suite = unittest.TestLoader()
+#    test_suite.loadTestsFromTestCase(AddPlayerToBase)
+
 
 
 if __name__ == '__main__':
